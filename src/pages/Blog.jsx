@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <div>
       <Container>
-        <Accordion className="mt-5" defaultActiveKey="0">
+        <Accordion className="mt-5 shadow" defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               What is the purpose of react router?
