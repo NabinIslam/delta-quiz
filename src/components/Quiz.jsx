@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 const Quiz = ({ quiz }) => {
   const { name, logo, total, id } = quiz;
   return (
-    <Card className='shadow' style={{ width: '100%' }}>
+    <Card className="shadow" style={{ width: '100%' }}>
       <Card.Img className="bg-secondary" variant="top" src={logo} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Link to={`/${id}`}>
+        <Link to={`/quiz/${id}`}>
           <Button className="rounded-1" variant="success">
             Start Quiz <FontAwesomeIcon icon={faArrowRight} />
           </Button>

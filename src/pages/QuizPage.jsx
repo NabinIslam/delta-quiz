@@ -9,7 +9,9 @@ const QuizPage = () => {
 
   return (
     <div>
-      <h2 className="text-center fw-bolder mt-5">{name} Quiz</h2>
+      <h2 className="text-center fw-bolder mt-5">
+        {name} Quiz <img className="text-center" width={25} src={logo} alt="" />
+      </h2>
       <h5 className="text-center">
         You will be answering total {total} questions
       </h5>
