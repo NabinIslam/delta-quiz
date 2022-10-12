@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -17,20 +18,26 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link>
-              <Link className="text-white text-decoration-none" to={'/'}>
+              <Link
+                className="menu_link text-white text-decoration-none"
+                to={'/'}
+              >
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link
-                className="text-white text-decoration-none"
+                className="menu_link text-white text-decoration-none"
                 to={'/statistics'}
               >
                 Statistics
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="text-white text-decoration-none" to={'/blog'}>
+              <Link
+                className="menu_link text-white text-decoration-none"
+                to={'/blog'}
+              >
                 Blog
               </Link>
             </Nav.Link>

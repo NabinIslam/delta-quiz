@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
+import { tabTitle } from '../generalFuctionality/tabTitle';
 
 const Blog = () => {
+  tabTitle('DeltaQuiz: Blog');
+
   return (
     <div>
       <Container>

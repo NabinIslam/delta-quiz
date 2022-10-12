@@ -1,11 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SingleQuestion from '../components/SingleQuestion';
+import { tabTitle } from '../generalFuctionality/tabTitle';
 
 const QuizPage = () => {
   const quizQuestions = useLoaderData();
 
   const { total, id, name, logo, questions } = quizQuestions.data;
+
+  tabTitle(`DeltaQuiz: ${name} Quiz`);
 
   return (
     <div>

@@ -9,8 +9,10 @@ import {
   Tooltip,
   Legend,
 } from 'recharts';
+import { tabTitle } from '../generalFuctionality/tabTitle';
 
 const Statistics = () => {
+  tabTitle('DeltaQuiz: Quiz Statistics');
   const quizData = useLoaderData();
 
   return (

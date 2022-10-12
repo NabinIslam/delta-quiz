@@ -3,8 +3,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import Intro from '../components/Intro';
 import Quiz from '../components/Quiz';
+import { tabTitle } from '../generalFuctionality/tabTitle';
 
 const Home = () => {
+  tabTitle('DeltaQuiz: Home');
   const quizes = useLoaderData();
 
   return (
