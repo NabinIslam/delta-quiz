@@ -4,7 +4,7 @@ import IntroBg from '../assets/images/intro-bg.jpg';
 const Intro = () => {
   return (
     <div
-      className="py-5 px-5 my-5 rounded-4"
+      className="py-5 px-5 my-5 rounded-4 shadow"
       style={{
         backgroundImage: 'url(' + IntroBg + ')',
         backgroundSize: 'cover',
